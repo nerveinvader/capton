@@ -18,7 +18,7 @@ export function Features({ prompt, setPrompt, file, handleFileChange, handleSubm
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
           <textarea
             value={prompt}
-            onChange={(e) => setPrompt(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setPrompt(e.target.value)}
             className="w-full h-[200px] p-4 rounded-lg border border-[#003366]/20 focus:outline-none focus:ring-2 focus:ring-[#003366]/50 resize-none mb-4 bg-[#FDFCE8]"
             placeholder="Enter your prompt here..."
           />
